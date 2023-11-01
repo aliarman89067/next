@@ -30,7 +30,7 @@ export default function LoginPage() {
       }
       console.log(data);
       router.push("/profile");
-    } catch (error) {
+    } catch (error: any) {
       console.log("Login Failed " + error);
       toast(error.message);
     } finally {
